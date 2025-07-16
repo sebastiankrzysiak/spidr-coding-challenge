@@ -51,13 +51,13 @@ function App() {
       setLastNameError('');
     }
 
-    const phoneNumberRegex = /^\d{3}-\d{3}-\d{4}$/;
+    const phoneNumberRegex = /^\d+$/;
 
     if (!phoneNumber) {
       setPhoneNumberError('Phone number is required');
       return;
     } else if (!phoneNumberRegex.test(phoneNumber)) {
-      setPhoneNumberError('Phone number must be in format 123-456-7890');
+      setPhoneNumberError('Phone number must contain only numbers');
       return;
     } else {
       setPhoneNumberError('');
@@ -106,7 +106,7 @@ function App() {
     });
   };
   return (
-    <form onSubmit={handleSubmit}>
+  <form onSubmit={handleSubmit}>
       <div className={firstName ? 'filled' : ''}>
         <label>First Name</label>
         <input
@@ -130,7 +130,6 @@ function App() {
         <input
           type="text"
           value={phoneNumber}
-          placeholder="123-456-7890"
           onChange={(e) => setPhoneNumber(e.target.value)}
         />
         {phoneNumberError && <p className="error">{phoneNumberError}</p>}
