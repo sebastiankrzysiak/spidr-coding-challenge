@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/spidr-coding-challenge/static/css/main.f310c40e.css",
-    "main.js": "/spidr-coding-challenge/static/js/main.abf5412e.js",
+    "main.js": "/spidr-coding-challenge/static/js/main.fe6dea44.js",
     "index.html": "/spidr-coding-challenge/index.html",
     "main.f310c40e.css.map": "/spidr-coding-challenge/static/css/main.f310c40e.css.map",
-    "main.abf5412e.js.map": "/spidr-coding-challenge/static/js/main.abf5412e.js.map"
+    "main.fe6dea44.js.map": "/spidr-coding-challenge/static/js/main.fe6dea44.js.map"
   },
   "entrypoints": [
     "static/css/main.f310c40e.css",
-    "static/js/main.abf5412e.js"
+    "static/js/main.fe6dea44.js"
   ]
 }
